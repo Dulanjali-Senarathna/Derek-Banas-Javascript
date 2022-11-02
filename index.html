@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        document.write(Number.MAX_VALUE + "<br>");
+        document.write(Number.MIN_VALUE + "<br>");
+
+        var samp_str = "This is some escaped characters \" \' \\";
+        document.write(samp_str+"<br>");
+
+        var first_str = "First String";
+        var second_str = "Second String";
+
+        var combined = first_str+ second_str;
+        document.write(combined + "<br>");
+        document.write("Length of the string: " + combined.length +"<br>");
+        document.write("Substring"+ combined.substring(6,12) + "<br>");
+        document.write("Last letter: " + combined.charAt(combined.length-1)+"<br>");
+        document.write("Index of T is: " + combined.indexOf('t'));
+    </script>
+    <noscript>
+        <h3>This site required Javascript</h3>
+    </noscript>
+</body>
+</html>
