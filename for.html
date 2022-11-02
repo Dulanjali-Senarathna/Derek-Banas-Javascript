@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        var count = 1;
+        while(count<=10){
+
+            if(count==6){
+                break;
+            }
+
+            if(count%2){
+                count++;
+                continue;
+            }
+            
+            document.write(count + "<br>");
+            count++;
+        }
+    </script>
+</body>
+</html>
