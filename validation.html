@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        document.write("<h1>This is JS header</h1>")
+        function editNodeText(regex,input,helpId,helpMEssage){
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        Enter your name :
+        <input type="text" id="name" name="name" size="30" onblur="isTheFieldEmpty(this, document.getElementById('name_help'))">
+        <span id="name_help"></span>
+    </div>
+    <div>
+        Enter your street address :
+        <input type="text" id="street" name="street" size="30" onblur="isAddressOk(this, document.getElementById('street_help'))">
+        <span id="street_help"></span>
+    </div>
+    <div>
+        Enter city :
+        <input type="text" id="city" name="city" size="30" onblur="isCityOk(this, document.getElementById('city_help'))">
+        <span id="city_help"></span>
+    </div>
+    <div>
+        Enter state :
+        <input type="text" id="state" name="state" size="30" onblur="isStateOk(this, document.getElementById('state_help'))">
+        <span id="state_help"></span>
+    </div>
+    <div>
+        Enter phone number :
+        <input type="text" id="phone" name="phone" size="30" onblur="isPhoneOk(this, document.getElementById('phone_help'))">
+        <span id="phone_help"></span>
+    </div>
+    <div>
+        Enter email :
+        <input type="text" id="email" name="email" size="30" onblur="isEmailOk(this, document.getElementById('email_help'))">
+        <span id="email_help"></span>
+    </div>
+</body>
+</html>
