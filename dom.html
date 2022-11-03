@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script lang="javascript" type="text/javascript">
+        function editNodeText(id,ntext){
+            var node = document.getElementById(id);
+
+            while(node.firstChild)
+                node.removeChild(node.firstChild);
+
+            node.appendChild(document.createTextNode(ntext));
+
+            document.getElementById(id).style.color="red";
+            document.getElementById(id).style.position="fixed";
+            document.getElementById(id).style.left="100px";
+            document.getElementById(id).style.top="200px";
+            
+        }
+
+        function editNodeText2(id,newtext){
+            //var node = document.getElementById(id).firstChild;
+           // node.nodeValue = newtext;
+
+            //var node = document.getElementById(id).lastChild;
+            //node.nodeValue = newtext;
+            var node = document.getElementById(id)
+            node.removeChild(node.childNodes[1]);
+            node.childNodes[2].nodeValue = newtext;
+            var newNode = document.createElement('hr');
+            node.appendChild(newNode);
+            var RandomText = document.createTextNode("Random text");
+            node.appendChild(RandomText);
+        }
+
+
+    </script>
+</head>
+<body>
+    <SPan id="myspan" onclick="editNodeText('myspan','After Changed')">Change this text</SPan>
+    <div id="mydiv" onclick="editNodeText2('mydiv','New Div Text')">
+        <b>Some bold text</b> <br>
+        <i>Some italic text</i>
+    </div>
+</body>
+</html>
